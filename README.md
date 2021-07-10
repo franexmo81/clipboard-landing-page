@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor](https://www.frontendmentor.io/solutions/html-and-css-with-flexbox-xWEFPdlxw)
 - Live Site URL: [franexmo81.github.io/clipboard-landing-page](https://franexmo81.github.io/clipboard-landing-page)
 
 ## My process
