@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+/* ------------ COMMON ELEMENTS ------------ */
+
+body {
+  padding: 0;
+  padding-top: 60px;
+  margin: 0;
+  text-align: center;
+  background-image: url("./images/bg-header-desktop.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #999;
+}
+
+section {
+  max-width: 1100px;
+  padding: 60px 30px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  max-width: 720px;
+  margin: 20px auto;
+}
+
+h1,
+h2,
+h3 {
+  color: #555;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 250%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+h3 {
+  font-size: 145%;
+  margin: 10px auto;
+}
+
+p {
+  line-height: 1.75;
+}
+
+.link-download {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  margin: 5px;
+  margin-top: 25px;
+  border-radius: 100px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.link-download-ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 5px 10px 2px hsl(171, 66%, 85%);
+}
+
+.link-download-mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 5px 10px 2px hsl(233, 100%, 85%);
+}
+
+.link-download-ios:hover {
+  background-color: hsl(171, 66%, 49%);
+}
+
+.link-download-mac:hover {
+  background-color: hsl(233, 100%, 74%);
+}
+
+.image-large {
+  max-width: 80vw;
+}
+
+@media screen and (max-width: 1305px) {
+  body {
+    background-position: -70px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 180%;
+  }
+
+  .link-download {
+    display: block;
+  }
+}
+
+/* ------------ HEADER ------------ */
+
+.header-logo {
+  margin: 15px;
+}
+
+@media screen and (min-width: 550px) {
+  .header-text {
+    font-size: 115%;
+  }
+}
+
+/* ------------ KEEP ------------ */
+
+.wide-content {
+  margin: 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.wide-content > div {
+  width: 400px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.wide-content-left {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.wide-content-right {
+  padding-top: 40px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.wide-content-feature {
+  margin-left: 120px;
+  margin-right: 40px;
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+.wide-content-feature h3,
+.wide-content-feature p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 930px) {
+  .wide-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wide-content > div {
+    width: unset;
+  }
+
+  .wide-content-right {
+    padding-top: 40px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wide-content-feature {
+    max-width: 400px;
+    margin: 20px 0;
+    text-align: center;
+  }
+}
+
+/* ------------ ACCESS ------------ */
+
+#access .image-large {
+  margin-top: 80px;
+  margin-bottom: -60px;
+}
+
+/* ------------ SUPERCHARGE ------------ */
+
+.supercharge-features {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.supercharge-feature {
+  flex-basis: 350px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.supercharge-iconWrapper {
+  display: inline-block;
+  padding: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supercharge-text {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .supercharge-feature {
+    flex-basis: 300px;
+  }
+}
+
+/* ------------ BRANDS ------------ */
+
+#brands {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.brands-logoWrapper {
+  margin: 20px auto;
+  padding: 0;
+  flex-basis: 165px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------ FOOTER ------------ */
+
+#footer {
+  margin-top: 80px;
+  padding: 30px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #999;
+}
+
+#footer a:hover {
+  color: hsl(171, 66%, 44%);
+  fill: hsl(171, 66%, 44%);
+}
+
+.footer-content {
+  flex-basis: 100%;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  color: hsl(171, 66%, 44%);
+  height: 60px;
+  margin: 20px;
+}
+
+.footer-links {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0 80px;
+  max-height: 130px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 930px) {
+  .footer-links {
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .footer-links {
+    max-height: unset;
+    align-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.footer-links a {
+  font-weight: 600;
+  margin: 15px 35px;
+}
+
+.footer-socialMedia {
+  display: flex;
+  margin: 20px;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.footer-socialMedia a {
+  fill: #4c545c;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.2s, fill 0.2s;
+}
+
+@media screen and (max-width: 670px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-socialMedia a {
+    margin: 15px;
+  }
+}
+
+/* ------------ ATTRIBUTION ------------ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
